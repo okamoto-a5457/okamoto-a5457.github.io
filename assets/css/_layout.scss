@@ -33,6 +33,12 @@
   &__txt {
     font-size: 2rem;
   }
+  &__link {
+    margin-top: 80px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .l-body {

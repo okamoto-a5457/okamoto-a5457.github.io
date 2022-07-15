@@ -225,6 +225,10 @@ img {
   vertical-align: bottom;
 }
 
+input {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 /*------------------------------------*\
   layout
 \*------------------------------------*/
@@ -281,6 +285,14 @@ img {
   font-size: 2rem;
 }
 
+.l-kv__link {
+  margin-top: 80px;
+}
+
+.l-kv__link:hover {
+  cursor: pointer;
+}
+
 .l-body {
   margin-bottom: 200px;
 }
@@ -317,6 +329,17 @@ img {
   .u-hidden--pc {
     display: block;
   }
+}
+
+.u-txt--center {
+  text-align: center;
+}
+
+.c-btn--primary {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 3rem;
+  background: #f1f1f1;
 }
 
 .bl-item {
@@ -373,7 +396,8 @@ img {
 }
 
 .bl-prof {
-  margin-bottom: 200px;
+  padding: 100px 0 150px;
+  background: #f1f1f1;
 }
 
 .bl-prof__ttl {
