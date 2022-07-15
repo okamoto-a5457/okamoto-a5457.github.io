@@ -46,5 +46,9 @@
   &__sns-list {
     text-decoration: underline;
     margin-bottom: 20px;
+    font-size: 1.8rem;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }

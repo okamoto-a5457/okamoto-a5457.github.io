@@ -197,6 +197,7 @@ textarea {
 }
 
 html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -365,5 +366,10 @@ img {
 .bl-prof__sns-list {
   text-decoration: underline;
   margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.bl-prof__sns-list:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
