@@ -267,8 +267,14 @@ img {
 }
 
 .l-kv__ttl {
-  font-size: 4.5rem;
+  font-size: 3rem;
   display: block;
+}
+
+@media (min-width: 768px) {
+  .l-kv__ttl {
+    font-size: 4.5rem;
+  }
 }
 
 .l-kv__txt {
@@ -276,7 +282,13 @@ img {
 }
 
 .l-body {
-  margin-bottom: 300px;
+  margin-bottom: 200px;
+}
+
+@media (min-width: 768px) {
+  .l-body {
+    margin-bottom: 250px;
+  }
 }
 
 .l-footer {
@@ -347,7 +359,13 @@ img {
 
 .bl-item__ttl {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .bl-item__ttl {
+    margin-bottom: 20px;
+  }
 }
 
 .bl-item__txt {
@@ -360,7 +378,7 @@ img {
 
 .bl-prof__ttl {
   margin-bottom: 40px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .bl-prof__sns-list {

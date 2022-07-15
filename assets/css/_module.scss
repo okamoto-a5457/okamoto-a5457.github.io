@@ -30,7 +30,10 @@
   }
   &__ttl {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 20px;
+    }
   }
   &__txt {
     font-size: 1.6rem;
@@ -41,7 +44,7 @@
   margin-bottom: 200px;
   &__ttl {
     margin-bottom: 40px;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   &__sns-list {
     text-decoration: underline;

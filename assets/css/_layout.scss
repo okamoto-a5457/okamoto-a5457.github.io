@@ -24,8 +24,11 @@
     flex-direction: column;
   }
   &__ttl {
-    font-size: 4.5rem;
+    font-size: 3rem;
     display: block;
+    @include media-breakpoint-up(md) {
+      font-size: 4.5rem;
+    }
   }
   &__txt {
     font-size: 2rem;
@@ -33,7 +36,10 @@
 }
 
 .l-body {
-  margin-bottom: 300px;
+  margin-bottom: 200px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 250px;
+  }
 }
 
 .l-footer {
