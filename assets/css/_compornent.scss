@@ -2,7 +2,10 @@
   &--primary {
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 3rem;
+    font-size: 1.4rem;
     background: #f1f1f1;
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
   }
 }
