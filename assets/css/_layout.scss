@@ -14,17 +14,21 @@
   }
 }
 .l-kv {
+  height: 100vh;
   &__container {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   &__ttl {
-    font-size: 3rem;
+    font-size: 4.5rem;
     display: block;
+  }
+  &__txt {
+    font-size: 2rem;
   }
 }
 .l-item {
