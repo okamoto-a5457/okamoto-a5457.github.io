@@ -1,0 +1,50 @@
+.bl-item {
+  margin-bottom: 150px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 200px;
+  }
+  &__thumb {
+    display: block;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 40px;
+    a {
+      position: relative;
+      display: block;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.1s;
+      }
+      &:hover {
+        &::after {
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+  &__ttl {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  &__txt {
+    font-size: 1.6rem;
+  }
+}
+
+.bl-prof {
+  margin-bottom: 200px;
+  &__ttl {
+    margin-bottom: 40px;
+    font-size: 3rem;
+  }
+  &__sns-list {
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+}
