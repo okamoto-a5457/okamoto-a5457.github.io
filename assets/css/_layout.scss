@@ -1,0 +1,59 @@
+/*------------------------------------*\
+  layout
+\*------------------------------------*/
+.l-root {
+  position: relative;
+}
+
+.l-globalInner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10.667vw;
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+}
+.l-globalInner--xs {
+  max-width: 884px;
+  margin: 0 auto;
+  padding: 0 10.667vw;
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+}
+.l-globalInner--s {
+  max-width: 784px;
+  margin: 0 auto;
+  padding: 0 10.667vw;
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+}
+.l-globalInner--m {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.l-globalInner--ml {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 10.667vw;
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+}
+.l-globalInner--l {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+.l-globalInner--xl {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 10.667vw;
+  @include media-breakpoint-up(md) {
+    padding: 0;
+  }
+}
+.l-globalInner--xxl {
+  max-width: 1920px;
+  margin: 0 auto;
+}

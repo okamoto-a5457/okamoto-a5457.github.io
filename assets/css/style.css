@@ -1,0 +1,433 @@
+/*------------------------------------*\
+ variables
+\*------------------------------------*/
+/*------------------------------------*\
+  mixin
+\*------------------------------------*/
+/*------------------------------------*\
+  base
+\*------------------------------------*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ropa+Sans:ital@0;1&display=swap");
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select,
+textarea {
+  vertical-align: middle;
+  font-size: 4.3vw;
+  border: transparent;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@media (min-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 1.8rem;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #464646;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #464646;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/*------------------------------------*\
+  layout
+\*------------------------------------*/
+.l-root {
+  position: relative;
+}
+
+.l-globalInner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10.667vw;
+}
+
+@media (min-width: 768px) {
+  .l-globalInner {
+    padding: 0;
+  }
+}
+
+.l-globalInner--xs {
+  max-width: 884px;
+  margin: 0 auto;
+  padding: 0 10.667vw;
+}
+
+@media (min-width: 768px) {
+  .l-globalInner--xs {
+    padding: 0;
+  }
+}
+
+.l-globalInner--s {
+  max-width: 784px;
+  margin: 0 auto;
+  padding: 0 10.667vw;
+}
+
+@media (min-width: 768px) {
+  .l-globalInner--s {
+    padding: 0;
+  }
+}
+
+.l-globalInner--m {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.l-globalInner--ml {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 10.667vw;
+}
+
+@media (min-width: 768px) {
+  .l-globalInner--ml {
+    padding: 0;
+  }
+}
+
+.l-globalInner--l {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+.l-globalInner--xl {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 10.667vw;
+}
+
+@media (min-width: 768px) {
+  .l-globalInner--xl {
+    padding: 0;
+  }
+}
+
+.l-globalInner--xxl {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/*------------------------------------*\
+  utility
+\*------------------------------------*/
+@media (min-width: 768px) {
+  .u-hidden--sp {
+    display: none !important;
+  }
+}
+
+.u-hidden--pc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .u-hidden--pc {
+    display: block;
+  }
+}
+
+.u-nowrap {
+  white-space: nowrap;
+}
+
+.u-aline--center {
+  text-align: center;
+}
+
+.u-mx--auto {
+  margin: 0 auto;
+}
+
+.u-txt--xl {
+  font-size: 10.667vw;
+}
+
+@media (min-width: 768px) {
+  .u-txt--xl {
+    font-size: 7.4rem;
+  }
+}
+
+.u-txt--s {
+  font-size: 2.933vw;
+}
+
+@media (min-width: 768px) {
+  .u-txt--s {
+    font-size: 1.7rem;
+  }
+}
+
+.u-txt--xs {
+  font-size: 2.7vw;
+}
+
+@media (min-width: 768px) {
+  .u-txt--xs {
+    font-size: 1.4rem;
+  }
+}
+
+.u-txt--bold {
+  font-weight: 600 !important;
+}
+
+.u-txt--semibold {
+  font-weight: 500 !important;
+}
+
+.u-txt--medium {
+  font-weight: 400 !important;
+}
+
+.u-txt--regular {
+  font-weight: 300 !important;
+}
+
+.u-txt--danger {
+  color: red !important;
+}
+
+.u-txt--emphasis {
+  font-weight: 600 !important;
+}
+
+.u-txt--deco {
+  position: absolute;
+  right: -0.6em;
+}
+
+.u-underline {
+  -webkit-text-decoration: underline solid;
+          text-decoration: underline solid;
+  text-underline-offset: 20%;
+}
+
+@media (min-width: 768px) {
+  .u-w--md-100 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .u-mb--md-0 {
+    margin-bottom: 0 !important;
+  }
+}
+
+.u-bg--white {
+  background: #fff !important;
+}
+
+@media (min-width: 768px) {
+  .u-flex--md-2col {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 7%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

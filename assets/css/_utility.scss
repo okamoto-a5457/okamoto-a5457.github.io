@@ -1,0 +1,117 @@
+/*------------------------------------*\
+  utility
+\*------------------------------------*/
+
+// ブレークポイントが768px
+.u-hidden--sp {
+  @include media-breakpoint-up(md) {
+    display: none !important;
+  }
+}
+
+.u-hidden--pc {
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+
+.u-nowrap {
+  white-space: nowrap;
+}
+
+.u-aline--center {
+  text-align: center;
+}
+
+.u-mx--auto {
+  margin: 0 auto;
+}
+
+.u-txt {
+  &--xl {
+    font-size: 10.667vw;
+
+    @include media-breakpoint-up(md) {
+      font-size: 7.4rem;
+    }
+  }
+
+  &--s {
+    font-size: 2.933vw;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &--xs {
+    font-size: 2.7vw;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &--bold {
+    font-weight: 600!important;
+  }
+
+  &--semibold {
+    font-weight: 500!important;
+  }
+
+  &--medium {
+    font-weight: 400!important;
+  }
+
+  &--regular {
+    font-weight: 300!important;
+  }
+
+  &--danger {
+    color: $color-danger!important;
+  }
+
+  &--emphasis {
+    font-weight: 600!important;
+  }
+
+  &--deco {
+    position: absolute;
+    right: -0.6em;
+  }
+}
+
+.u-underline {
+  text-decoration: underline solid;
+  text-underline-offset: 20%;
+}
+
+.u-w--md-100 {
+  @include media-breakpoint-up(md) {
+    width: 100% !important;
+  }
+}
+
+.u-mb--md-0 {
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.u-bg--white {
+  background: #fff !important;
+}
+
+.u-flex {
+  &--md-2col {
+    @include media-breakpoint-up(md) {
+      display: flex !important;
+      align-items: flex-start;
+      gap: 7%;
+
+    }
+  }
+}
